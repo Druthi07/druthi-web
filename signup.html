@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  
+  <style>
+    body {
+        background-image: url("background login page.jpg"); /* Replace with your desired background image URL */
+      background-size: cover;
+      background-position: center;
+      background-color: #f8f8f8;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #555;
+    }
+
+    .navbar a.active {
+      background-color: #4CAF50;
+    }
+
+    .content {
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+      max-width: 800px;
+      border-radius: 8px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type="text"]:focus, input[type="password"]:focus {
+      border: 1px solid #4CAF50;
+      outline: none;
+    }
+
+    .btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+
+    .btn:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+      
+<div class="content">
+  <h1>Signup</h1>
+  <p>Please fill in this form to create an account.</p>
+  <form onsubmit="return validateSignupForm()">
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" id="uname" required>
+    <span id="uname-error" class="error-message"></span>
+
+    <label for="pnumber"><b>Phone Number</b></label>
+    <input type="text" placeholder="Enter Phone Number" id="pnumber" required>
+    <span id="pnumber-error" class="error-message"></span>
+
+    <label for="email"><b>Email Id</b></label>
+    <input type="text" placeholder="Enter Email Id" id="email" required>
+    <span id="email-error" class="error-message"></span>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" id="psw" required>
+    <span id="psw-error" class="error-message"></span>
+
+    <label for="confirmpassword"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Confirm Password" id="confirmpassword" required>
+    <span id="confirmpassword-error" class="error-message"></span>
+
+    <button type="submit" class="btn">Signup</button>
+  </div>
+</form>
+</div> 
+<script src="script.js"></script>
+</body>
+</html>
